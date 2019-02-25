@@ -25,12 +25,10 @@ class Route {
       'Madison Avenue',
       '5th Avenue'
     ];
+    
     function horizontalBlock(avenue) {
         return eastWest.findIndex(function(block) {return block === avenue;});
     };
-    //const horizontalDistance =
-    //eastWest.findIndex(function(avenue) {return avenue === this.endingLocation.horizontal});
-    //}) - eastWest.findIndex(function(avenue) {return avenue === this.beginningLocation.horizontal});
 
     const horizontalDistance = horizontalBlock(this.endingLocation.horizontal) - horizontalBlock(this.beginningLocation.horizontal);
     const verticalDistance = this.endingLocation.vertical - this.beginningLocation.vertical;

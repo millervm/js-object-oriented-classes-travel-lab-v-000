@@ -32,7 +32,7 @@ class Route {
     //eastWest.findIndex(function(avenue) {return avenue === this.endingLocation.horizontal});
     //}) - eastWest.findIndex(function(avenue) {return avenue === this.beginningLocation.horizontal});
 
-
+    const horizontalDistance = eastWest.findIndex(this.beginningLocation.horizontal);
     const verticalDistance = this.endingLocation.vertical - this.beginningLocation.vertical;
 
     return verticalDistance;

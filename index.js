@@ -35,6 +35,6 @@ class Route {
     const horizontalDistance = horizontalBlock(this.endingLocation.horizontal) - horizontalBlock(this.beginningLocation.horizontal);
     const verticalDistance = this.endingLocation.vertical - this.beginningLocation.vertical;
 
-    return horizontalDistance.abs() + verticalDistance.abs();
+    return horizontalDistance + verticalDistance;
   };
 };
